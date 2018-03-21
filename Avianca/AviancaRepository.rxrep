@@ -1,19 +1,200 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="AviancaRepository"
+﻿<repository
 id="6b107243-6a37-48c8-b362-66e2e9c84ada"
+name="AviancaRepository"
 rxversion="8.0">
-  <codegen
-  classname="AviancaRepository"
-  namespace="Avianca"/>
-  <rootfolder
-  name="Root"
-  id="c84fb135-f1e1-4ec8-af2e-18e63ef4015f"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+	<codegen
+	classname="AviancaRepository"
+	namespace="Avianca">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="c84fb135-f1e1-4ec8-af2e-18e63ef4015f"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="0b5507cb-be5b-4a64-afec-1f339c0e0573"
+		isrooted="True"
+		name="EnColombiaVuelosNacionalesEInternac"
+		refpath="/dom[@domain='www.avianca.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="1839c623-ef06-41ad-8799-5f3b44f3a666"
+			name="BkOrigen"
+			refimgid="9fa48014-4d84-40d8-9134-ffc6aecd8736"
+			refpath="/dom[@domain='www.avianca.com']//input[#'bkOrigen']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.avianca.com']//input[#'bkOrigen']
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="ca3ed01a-8125-487c-9b48-e646c120859c"
+			name="AccordionId505"
+			refimgid="3f4b1988-fb45-465b-ad99-e75c84c9fb91"
+			refpath="/dom[@domain='www.avianca.com']//li[#'accordion-id-505']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.avianca.com']//li[#'accordion-id-505']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="8bbd2625-ecc4-4b59-948a-90dfce1b0059"
+			name="BkDestino"
+			refimgid="afb5b547-e1cb-4e30-ab01-24d2dd9503d2"
+			refpath="/dom[@domain='www.avianca.com']//input[#'bkDestino']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.avianca.com']//input[#'bkDestino']
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="43ba2ad1-f76d-4814-8ffe-0e61bbeda57a"
+			name="AccordionId1487"
+			refimgid="72a79b4a-7589-4ea3-b294-197b91cb783d"
+			refpath="/dom[@domain='www.avianca.com']//li[#'accordion-id-1487']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.avianca.com']//li[#'accordion-id-1487']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="1b7198b6-e904-4a5c-a5a1-7841fa607085"
+			name="BkFechaIda"
+			refimgid="8a99f3ce-e1e6-4cd7-9339-487a50f1417e"
+			refpath="/dom[@domain='www.avianca.com']//input[#'bkFechaIda']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.avianca.com']//input[#'bkFechaIda']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="88927abe-c33e-46e4-86f6-32aa8d7f1526"
+			name="BkFechaRegreso"
+			refimgid="1938436c-88c8-43ca-b9ac-7af31d50c783"
+			refpath="/dom[@domain='www.avianca.com']//input[#'bkFechaRegreso']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.avianca.com']//input[#'bkFechaRegreso']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="2d142aa0-b3f6-4b65-aba6-2e71c891434a"
+			name="Consultar"
+			refimgid="862e75c3-20a7-4f1a-9c00-a6e947cfe7f9"
+			refpath="/dom[@domain='www.avianca.com']//div[#'vuelos']/form/div[3]/div[4]/div[4]/div/input[@title='Consultar']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.avianca.com']//div[#'vuelos']/form[@method='post']/div[3]/div[4]/div[4]/?/?/input[@title='Consultar']
+			</item>
+			<basepath>
+				/dom[@domain='www.avianca.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="ae86b90d-70b5-4aa2-994f-5886f3d6ca37"
+		isrooted="True"
+		name="TiquetesAereosEnVuelosNacionalesEI"
+		refpath="/dom[@domain='booking.avianca.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="70aab79e-9ea5-4a2b-81e9-3f33b41baf79"
+			isrooted="True"
+			name="RowCalendarmatrixModifydatesPanelCal"
+			refpath="/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="5d13a8f6-d57c-4be7-8c87-c8e5130062e6"
+				name="BeginLocationContainer"
+				refimgid="3e746d3b-1b70-4cc6-9a58-80bc8ffc2f56"
+				refpath="/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]/div[1]/div/div[1]/h3/div[1]"
+				searchtimeout="30000ms">
+					/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]//h3/div[1]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="e48b4c8b-7551-480d-b486-0451db05f7eb"
+				name="EndLocationContainer"
+				refimgid="2ab1f1ec-e8be-4796-8fbd-867fb74c85ae"
+				refpath="/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]/div[1]/div/div[1]/h3/div[2]"
+				searchtimeout="30000ms">
+					/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]//h3/div[2]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="5cca2b4a-e43f-4e7a-b757-fc03fbf68248"
+				name="BeginLocationContainer1"
+				refimgid="a9e18004-cd95-4827-b010-9966e7b7719d"
+				refpath="/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]/div[2]/div/div[1]/h3/div[1]"
+				searchtimeout="30000ms">
+					/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]/div[2]/div/div[1]/h3/div[1]
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="aeec21ce-0ba6-418c-91ae-099b363a41ca"
+				name="EndLocationContainer1"
+				refimgid="2cd73f08-da17-4763-a34a-a538fdbf6f4d"
+				refpath="/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]/div[2]/div/div[1]/h3/div[2]"
+				searchtimeout="30000ms">
+					/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]/div[2]/div/div[1]/h3/div[2]
+				</item>
+				<basepath>
+					/dom[@domain='booking.avianca.com']//frame[#'FrameAmadeus']//section[#'matrix']/div[4]
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@domain='booking.avianca.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>

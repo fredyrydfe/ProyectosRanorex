@@ -58,6 +58,12 @@ rxversion="8.0">
 			id="dad26e18-31d6-4373-b0ce-8b3ff8e525b8"
 			name="Busqueda_de_vuelos">
 			</smartfoldernode>
+			<testmodule
+			id="e654d7bb-0778-4b35-b8ad-af7b6ef81f86"
+			name="ConsultarVuelosIdaYRegreso"
+			ref="8b3da90c-a62d-478e-a47c-8a4941872256"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="f0324152-57d8-47c7-8a63-b57d2a13cfc9"
 			name="el_usuario_consulta_los_vuelos_disponibles_para_el_trayecto_de_ida">
@@ -76,6 +82,10 @@ rxversion="8.0">
 						<testcase
 						id="79cf552a-0c80-4e5f-b401-9e72ecc97d68"
 						name="el_usuario_consulta_los_vuelos_disponibles_para_el_trayecto_de_ida_y_regreso">
+							<testmodule
+							id="e654d7bb-0778-4b35-b8ad-af7b6ef81f86"
+							name="ConsultarVuelosIdaYRegreso">
+							</testmodule>
 						</testcase>
 						<testcase
 						id="f0324152-57d8-47c7-8a63-b57d2a13cfc9"
@@ -121,37 +131,13 @@ rxversion="8.0">
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="0ea39736-b476-4c76-a5ec-8c5e2bdba5b2">
-			</testcontainer>
-			<testcontainer
 			id="0fb846d6-3541-46c7-8562-a79a3be7f26d">
-			</testcontainer>
-			<testcontainer
-			id="4a6695aa-f244-445c-88e5-83c2878a7a16">
-			</testcontainer>
-			<testcontainer
-			id="4f40b1db-5e43-402d-8d72-f1defc0f7f05">
-			</testcontainer>
-			<testcontainer
-			id="59e193da-cac0-4b64-b85b-505c5daf8ced">
-			</testcontainer>
-			<testcontainer
-			id="75df31f7-7de3-4b4c-8489-1e41cc73ccfa">
 			</testcontainer>
 			<testcontainer
 			id="79cf552a-0c80-4e5f-b401-9e72ecc97d68">
 			</testcontainer>
 			<testcontainer
-			id="cf163c5d-677c-4449-a14a-b051805b2271">
-			</testcontainer>
-			<testcontainer
-			id="da519ae1-a39e-4a5e-a45b-f295903e74f3">
-			</testcontainer>
-			<testcontainer
 			id="dad26e18-31d6-4373-b0ce-8b3ff8e525b8">
-			</testcontainer>
-			<testcontainer
-			id="f0324152-57d8-47c7-8a63-b57d2a13cfc9">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

@@ -27,6 +27,8 @@ namespace Avianca
     public partial class AviancaRepository : RepoGenBaseFolder
     {
         static AviancaRepository instance = new AviancaRepository();
+        AviancaRepositoryFolders.EnColombiaVuelosNacionalesEInternacAppFolder _encolombiavuelosnacionaleseinternac;
+        AviancaRepositoryFolders.TiquetesAereosEnVuelosNacionalesEIAppFolder _tiquetesaereosenvuelosnacionalesei;
 
         /// <summary>
         /// Gets the singleton class instance representing the AviancaRepository element repository.
@@ -43,6 +45,8 @@ namespace Avianca
         public AviancaRepository() 
             : base("AviancaRepository", "/", null, 0, false, "c84fb135-f1e1-4ec8-af2e-18e63ef4015f", ".\\RepositoryImages\\AviancaRepositoryc84fb135.rximgres")
         {
+            _encolombiavuelosnacionaleseinternac = new AviancaRepositoryFolders.EnColombiaVuelosNacionalesEInternacAppFolder(this);
+            _tiquetesaereosenvuelosnacionalesei = new AviancaRepositoryFolders.TiquetesAereosEnVuelosNacionalesEIAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +64,24 @@ namespace Avianca
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The EnColombiaVuelosNacionalesEInternac folder.
+        /// </summary>
+        [RepositoryFolder("0b5507cb-be5b-4a64-afec-1f339c0e0573")]
+        public virtual AviancaRepositoryFolders.EnColombiaVuelosNacionalesEInternacAppFolder EnColombiaVuelosNacionalesEInternac
+        {
+            get { return _encolombiavuelosnacionaleseinternac; }
+        }
+
+        /// <summary>
+        /// The TiquetesAereosEnVuelosNacionalesEI folder.
+        /// </summary>
+        [RepositoryFolder("ae86b90d-70b5-4aa2-994f-5886f3d6ca37")]
+        public virtual AviancaRepositoryFolders.TiquetesAereosEnVuelosNacionalesEIAppFolder TiquetesAereosEnVuelosNacionalesEI
+        {
+            get { return _tiquetesaereosenvuelosnacionalesei; }
+        }
     }
 
     /// <summary>
@@ -68,6 +90,423 @@ namespace Avianca
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.0")]
     public partial class AviancaRepositoryFolders
     {
+        /// <summary>
+        /// The EnColombiaVuelosNacionalesEInternacAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("0b5507cb-be5b-4a64-afec-1f339c0e0573")]
+        public partial class EnColombiaVuelosNacionalesEInternacAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _bkorigenInfo;
+            RepoItemInfo _accordionid505Info;
+            RepoItemInfo _bkdestinoInfo;
+            RepoItemInfo _accordionid1487Info;
+            RepoItemInfo _bkfechaidaInfo;
+            RepoItemInfo _bkfecharegresoInfo;
+            RepoItemInfo _consultarInfo;
+
+            /// <summary>
+            /// Creates a new EnColombiaVuelosNacionalesEInternac  folder.
+            /// </summary>
+            public EnColombiaVuelosNacionalesEInternacAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("EnColombiaVuelosNacionalesEInternac", "/dom[@domain='www.avianca.com']", parentFolder, 30000, null, false, "0b5507cb-be5b-4a64-afec-1f339c0e0573", "")
+            {
+                _bkorigenInfo = new RepoItemInfo(this, "BkOrigen", ".//input[#'bkOrigen']", 30000, null, "1839c623-ef06-41ad-8799-5f3b44f3a666");
+                _accordionid505Info = new RepoItemInfo(this, "AccordionId505", ".//li[#'accordion-id-505']", 30000, null, "ca3ed01a-8125-487c-9b48-e646c120859c");
+                _bkdestinoInfo = new RepoItemInfo(this, "BkDestino", ".//input[#'bkDestino']", 30000, null, "8bbd2625-ecc4-4b59-948a-90dfce1b0059");
+                _accordionid1487Info = new RepoItemInfo(this, "AccordionId1487", ".//li[#'accordion-id-1487']", 30000, null, "43ba2ad1-f76d-4814-8ffe-0e61bbeda57a");
+                _bkfechaidaInfo = new RepoItemInfo(this, "BkFechaIda", ".//input[#'bkFechaIda']", 30000, null, "1b7198b6-e904-4a5c-a5a1-7841fa607085");
+                _bkfecharegresoInfo = new RepoItemInfo(this, "BkFechaRegreso", ".//input[#'bkFechaRegreso']", 30000, null, "88927abe-c33e-46e4-86f6-32aa8d7f1526");
+                _consultarInfo = new RepoItemInfo(this, "Consultar", ".//div[#'vuelos']/form[@method='post']/div[3]/div[4]/div[4]/?/?/input[@title='Consultar']", 30000, null, "2d142aa0-b3f6-4b65-aba6-2e71c891434a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("0b5507cb-be5b-4a64-afec-1f339c0e0573")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("0b5507cb-be5b-4a64-afec-1f339c0e0573")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BkOrigen item.
+            /// </summary>
+            [RepositoryItem("1839c623-ef06-41ad-8799-5f3b44f3a666")]
+            public virtual Ranorex.InputTag BkOrigen
+            {
+                get
+                {
+                    return _bkorigenInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BkOrigen item info.
+            /// </summary>
+            [RepositoryItemInfo("1839c623-ef06-41ad-8799-5f3b44f3a666")]
+            public virtual RepoItemInfo BkOrigenInfo
+            {
+                get
+                {
+                    return _bkorigenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AccordionId505 item.
+            /// </summary>
+            [RepositoryItem("ca3ed01a-8125-487c-9b48-e646c120859c")]
+            public virtual Ranorex.LiTag AccordionId505
+            {
+                get
+                {
+                    return _accordionid505Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AccordionId505 item info.
+            /// </summary>
+            [RepositoryItemInfo("ca3ed01a-8125-487c-9b48-e646c120859c")]
+            public virtual RepoItemInfo AccordionId505Info
+            {
+                get
+                {
+                    return _accordionid505Info;
+                }
+            }
+
+            /// <summary>
+            /// The BkDestino item.
+            /// </summary>
+            [RepositoryItem("8bbd2625-ecc4-4b59-948a-90dfce1b0059")]
+            public virtual Ranorex.InputTag BkDestino
+            {
+                get
+                {
+                    return _bkdestinoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BkDestino item info.
+            /// </summary>
+            [RepositoryItemInfo("8bbd2625-ecc4-4b59-948a-90dfce1b0059")]
+            public virtual RepoItemInfo BkDestinoInfo
+            {
+                get
+                {
+                    return _bkdestinoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AccordionId1487 item.
+            /// </summary>
+            [RepositoryItem("43ba2ad1-f76d-4814-8ffe-0e61bbeda57a")]
+            public virtual Ranorex.LiTag AccordionId1487
+            {
+                get
+                {
+                    return _accordionid1487Info.CreateAdapter<Ranorex.LiTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AccordionId1487 item info.
+            /// </summary>
+            [RepositoryItemInfo("43ba2ad1-f76d-4814-8ffe-0e61bbeda57a")]
+            public virtual RepoItemInfo AccordionId1487Info
+            {
+                get
+                {
+                    return _accordionid1487Info;
+                }
+            }
+
+            /// <summary>
+            /// The BkFechaIda item.
+            /// </summary>
+            [RepositoryItem("1b7198b6-e904-4a5c-a5a1-7841fa607085")]
+            public virtual Ranorex.InputTag BkFechaIda
+            {
+                get
+                {
+                    return _bkfechaidaInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BkFechaIda item info.
+            /// </summary>
+            [RepositoryItemInfo("1b7198b6-e904-4a5c-a5a1-7841fa607085")]
+            public virtual RepoItemInfo BkFechaIdaInfo
+            {
+                get
+                {
+                    return _bkfechaidaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BkFechaRegreso item.
+            /// </summary>
+            [RepositoryItem("88927abe-c33e-46e4-86f6-32aa8d7f1526")]
+            public virtual Ranorex.InputTag BkFechaRegreso
+            {
+                get
+                {
+                    return _bkfecharegresoInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BkFechaRegreso item info.
+            /// </summary>
+            [RepositoryItemInfo("88927abe-c33e-46e4-86f6-32aa8d7f1526")]
+            public virtual RepoItemInfo BkFechaRegresoInfo
+            {
+                get
+                {
+                    return _bkfecharegresoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Consultar item.
+            /// </summary>
+            [RepositoryItem("2d142aa0-b3f6-4b65-aba6-2e71c891434a")]
+            public virtual Ranorex.InputTag Consultar
+            {
+                get
+                {
+                    return _consultarInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Consultar item info.
+            /// </summary>
+            [RepositoryItemInfo("2d142aa0-b3f6-4b65-aba6-2e71c891434a")]
+            public virtual RepoItemInfo ConsultarInfo
+            {
+                get
+                {
+                    return _consultarInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TiquetesAereosEnVuelosNacionalesEIAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ae86b90d-70b5-4aa2-994f-5886f3d6ca37")]
+        public partial class TiquetesAereosEnVuelosNacionalesEIAppFolder : RepoGenBaseFolder
+        {
+            AviancaRepositoryFolders.RowCalendarmatrixModifydatesPanelCalFolder _rowcalendarmatrixmodifydatespanelcal;
+
+            /// <summary>
+            /// Creates a new TiquetesAereosEnVuelosNacionalesEI  folder.
+            /// </summary>
+            public TiquetesAereosEnVuelosNacionalesEIAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TiquetesAereosEnVuelosNacionalesEI", "/dom[@domain='booking.avianca.com']", parentFolder, 30000, null, false, "ae86b90d-70b5-4aa2-994f-5886f3d6ca37", "")
+            {
+                _rowcalendarmatrixmodifydatespanelcal = new AviancaRepositoryFolders.RowCalendarmatrixModifydatesPanelCalFolder(this);
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ae86b90d-70b5-4aa2-994f-5886f3d6ca37")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ae86b90d-70b5-4aa2-994f-5886f3d6ca37")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RowCalendarmatrixModifydatesPanelCal folder.
+            /// </summary>
+            [RepositoryFolder("70aab79e-9ea5-4a2b-81e9-3f33b41baf79")]
+            public virtual AviancaRepositoryFolders.RowCalendarmatrixModifydatesPanelCalFolder RowCalendarmatrixModifydatesPanelCal
+            {
+                get { return _rowcalendarmatrixmodifydatespanelcal; }
+            }
+        }
+
+        /// <summary>
+        /// The RowCalendarmatrixModifydatesPanelCalFolder folder.
+        /// </summary>
+        [RepositoryFolder("70aab79e-9ea5-4a2b-81e9-3f33b41baf79")]
+        public partial class RowCalendarmatrixModifydatesPanelCalFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _beginlocationcontainerInfo;
+            RepoItemInfo _endlocationcontainerInfo;
+            RepoItemInfo _beginlocationcontainer1Info;
+            RepoItemInfo _endlocationcontainer1Info;
+
+            /// <summary>
+            /// Creates a new RowCalendarmatrixModifydatesPanelCal  folder.
+            /// </summary>
+            public RowCalendarmatrixModifydatesPanelCalFolder(RepoGenBaseFolder parentFolder) :
+                    base("RowCalendarmatrixModifydatesPanelCal", ".//frame[#'FrameAmadeus']//section[#'matrix']/div[4]", parentFolder, 30000, null, false, "70aab79e-9ea5-4a2b-81e9-3f33b41baf79", "")
+            {
+                _beginlocationcontainerInfo = new RepoItemInfo(this, "BeginLocationContainer", ".//h3/div[1]", 30000, null, "5d13a8f6-d57c-4be7-8c87-c8e5130062e6");
+                _endlocationcontainerInfo = new RepoItemInfo(this, "EndLocationContainer", ".//h3/div[2]", 30000, null, "e48b4c8b-7551-480d-b486-0451db05f7eb");
+                _beginlocationcontainer1Info = new RepoItemInfo(this, "BeginLocationContainer1", "div[2]/div/div[1]/h3/div[1]", 30000, null, "5cca2b4a-e43f-4e7a-b757-fc03fbf68248");
+                _endlocationcontainer1Info = new RepoItemInfo(this, "EndLocationContainer1", "div[2]/div/div[1]/h3/div[2]", 30000, null, "aeec21ce-0ba6-418c-91ae-099b363a41ca");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("70aab79e-9ea5-4a2b-81e9-3f33b41baf79")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("70aab79e-9ea5-4a2b-81e9-3f33b41baf79")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BeginLocationContainer item.
+            /// </summary>
+            [RepositoryItem("5d13a8f6-d57c-4be7-8c87-c8e5130062e6")]
+            public virtual Ranorex.DivTag BeginLocationContainer
+            {
+                get
+                {
+                    return _beginlocationcontainerInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BeginLocationContainer item info.
+            /// </summary>
+            [RepositoryItemInfo("5d13a8f6-d57c-4be7-8c87-c8e5130062e6")]
+            public virtual RepoItemInfo BeginLocationContainerInfo
+            {
+                get
+                {
+                    return _beginlocationcontainerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EndLocationContainer item.
+            /// </summary>
+            [RepositoryItem("e48b4c8b-7551-480d-b486-0451db05f7eb")]
+            public virtual Ranorex.DivTag EndLocationContainer
+            {
+                get
+                {
+                    return _endlocationcontainerInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EndLocationContainer item info.
+            /// </summary>
+            [RepositoryItemInfo("e48b4c8b-7551-480d-b486-0451db05f7eb")]
+            public virtual RepoItemInfo EndLocationContainerInfo
+            {
+                get
+                {
+                    return _endlocationcontainerInfo;
+                }
+            }
+
+            /// <summary>
+            /// The BeginLocationContainer1 item.
+            /// </summary>
+            [RepositoryItem("5cca2b4a-e43f-4e7a-b757-fc03fbf68248")]
+            public virtual Ranorex.DivTag BeginLocationContainer1
+            {
+                get
+                {
+                    return _beginlocationcontainer1Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The BeginLocationContainer1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5cca2b4a-e43f-4e7a-b757-fc03fbf68248")]
+            public virtual RepoItemInfo BeginLocationContainer1Info
+            {
+                get
+                {
+                    return _beginlocationcontainer1Info;
+                }
+            }
+
+            /// <summary>
+            /// The EndLocationContainer1 item.
+            /// </summary>
+            [RepositoryItem("aeec21ce-0ba6-418c-91ae-099b363a41ca")]
+            public virtual Ranorex.DivTag EndLocationContainer1
+            {
+                get
+                {
+                    return _endlocationcontainer1Info.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EndLocationContainer1 item info.
+            /// </summary>
+            [RepositoryItemInfo("aeec21ce-0ba6-418c-91ae-099b363a41ca")]
+            public virtual RepoItemInfo EndLocationContainer1Info
+            {
+                get
+                {
+                    return _endlocationcontainer1Info;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
