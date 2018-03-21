@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="Avianca"
+      id="50e85033-2375-4ce9-a3bb-c1f28294232d"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="Avianca"
+      id="50e85033-2375-4ce9-a3bb-c1f28294232d"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

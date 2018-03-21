@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="27caf7fb-b5b3-469a-ae0c-036869ed1b20"
+mode="Global"
+rxversion="8.0">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="Avianca">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="6b107243-6a37-48c8-b362-66e2e9c84ada"
+	name="AviancaRepository"
+	relativepath="AviancaRepository.rxrep"
+	rxversion="8.0">
+		<codegen
+		classname="AviancaRepository"
+		namespace="Avianca">
+		</codegen>
+		<rootfolder
+		id="c84fb135-f1e1-4ec8-af2e-18e63ef4015f"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

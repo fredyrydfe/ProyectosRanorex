@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="AviancaRepository"
+id="6b107243-6a37-48c8-b362-66e2e9c84ada"
+rxversion="8.0">
+  <codegen
+  classname="AviancaRepository"
+  namespace="Avianca"/>
+  <rootfolder
+  name="Root"
+  id="c84fb135-f1e1-4ec8-af2e-18e63ef4015f"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
