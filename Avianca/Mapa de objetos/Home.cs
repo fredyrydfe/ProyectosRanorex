@@ -59,7 +59,7 @@ namespace Avianca.Mapa_de_objetos
         }
         
         [UserCodeMethod]
-    	public static String obtenerFechaPosterior(String valor)
+    	private static String obtenerFechaPosterior(String valor)
     	{
     		int numeroDeDias = Int32.Parse(valor);
     		String formatoFecha = "ddMMyyyy";
