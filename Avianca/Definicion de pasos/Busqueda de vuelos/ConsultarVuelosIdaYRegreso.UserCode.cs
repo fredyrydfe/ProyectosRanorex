@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Avianca.Mapa_de_objetos.Busqueda_de_vuelos
+namespace Avianca.Definicion_de_pasos.Busqueda_de_vuelos
 {
     public partial class ConsultarVuelosIdaYRegreso
     {

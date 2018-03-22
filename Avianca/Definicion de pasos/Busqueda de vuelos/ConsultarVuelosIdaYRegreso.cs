@@ -20,7 +20,7 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace Avianca.Mapa_de_objetos.Busqueda_de_vuelos
+namespace Avianca.Definicion_de_pasos.Busqueda_de_vuelos
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
@@ -123,16 +123,14 @@ namespace Avianca.Mapa_de_objetos.Busqueda_de_vuelos
             repo.EnColombiaVuelosNacionalesEInternac.BkFechaIda.PressKeys("{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}{Back}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '21032018' with focus on 'EnColombiaVuelosNacionalesEInternac.BkFechaIda'.", repo.EnColombiaVuelosNacionalesEInternac.BkFechaIdaInfo, new RecordItemIndex(11));
-            repo.EnColombiaVuelosNacionalesEInternac.BkFechaIda.PressKeys("21032018");
+            Mapa_de_objetos.Home.seleccionarFechaDeIda("Día en curso");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EnColombiaVuelosNacionalesEInternac.BkFechaRegreso' at Center.", repo.EnColombiaVuelosNacionalesEInternac.BkFechaRegresoInfo, new RecordItemIndex(12));
             repo.EnColombiaVuelosNacionalesEInternac.BkFechaRegreso.Click();
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '26032018' with focus on 'EnColombiaVuelosNacionalesEInternac.BkFechaRegreso'.", repo.EnColombiaVuelosNacionalesEInternac.BkFechaRegresoInfo, new RecordItemIndex(13));
-            repo.EnColombiaVuelosNacionalesEInternac.BkFechaRegreso.PressKeys("26032018");
+            Mapa_de_objetos.Home.SeleccionarFechaDeRegreso("5 días despues de la fecha en curso");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EnColombiaVuelosNacionalesEInternac.Consultar' at Center.", repo.EnColombiaVuelosNacionalesEInternac.ConsultarInfo, new RecordItemIndex(14));

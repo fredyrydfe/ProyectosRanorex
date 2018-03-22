@@ -24,7 +24,7 @@ rxversion="8.0">
 	</useDefaultItemLogging>
 	<codegen
 	classname="ConsultarVuelosIdaYRegreso"
-	namespace="Avianca.Mapa_de_objetos.Busqueda_de_vuelos">
+	namespace="Avianca.Definicion_de_pasos.Busqueda_de_vuelos">
 	</codegen>
 	<variables>
 	</variables>
@@ -50,7 +50,7 @@ rxversion="8.0">
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="80.0599ms"
+		duration="80ms"
 		enabled="True"
 		loc="97;24"
 		movetime="300ms"
@@ -2254,7 +2254,7 @@ AFtiWtYiSSSgJJ+lS0UUAf/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="63.9352ms"
+		duration="64ms"
 		enabled="True"
 		loc="100;29"
 		movetime="300ms"
@@ -3354,7 +3354,7 @@ AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFMl+6PrRRTW5nU+Bn/2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="95.8388ms"
+		duration="96ms"
 		enabled="True"
 		loc="155;19"
 		movetime="300ms"
@@ -3928,25 +3928,32 @@ KACiiigAooooAKKKKAP/2Q==
 				</path>
 			</info>
 		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="21032018"
-		duration="100ms"
+		<userrecorditem
+		classname="Home"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="seleccionarFechaDeIda"
+		namespace="Avianca.Mapa_de_objetos"
 		optional="False"
-		presstime="100ms"
-		searchpropertyid="a8869559-a859-4bb4-8d1b-8e04abc0afde">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="1b7198b6-e904-4a5c-a5a1-7841fa607085"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='www.avianca.com']//input[#'bkFechaIda']
-				</path>
-			</info>
-		</keysequenceitem>
+			<arguments
+			id="c95bea79-edb2-463c-bb2e-b914266a9fa6">
+				<argument
+				argname="valor"
+				id="73ab151f-84ea-4c84-84dd-1fd4cf708a19">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						D&#237;a en curso
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -3971,25 +3978,32 @@ KACiiigAooooAKKKKAP/2Q==
 				</path>
 			</info>
 		</mouseitem>
-		<keysequenceitem
-		KeySequence="26032018"
-		duration="100ms"
+		<userrecorditem
+		classname="Home"
 		enabled="True"
+		isexternaltestmethod="True"
+		methodname="SeleccionarFechaDeRegreso"
+		namespace="Avianca.Mapa_de_objetos"
 		optional="False"
-		presstime="100ms"
-		searchpropertyid="3db544ac-f9af-46a4-87df-af1115eb00f5">
+		varname="">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
-			<info
-			id="88927abe-c33e-46e4-86f6-32aa8d7f1526"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='www.avianca.com']//input[#'bkFechaRegreso']
-				</path>
-			</info>
-		</keysequenceitem>
+			<arguments
+			id="5c508fac-18e5-4af4-8d94-36b4f4316f95">
+				<argument
+				argname="valor"
+				id="5ed60325-7b33-4f99-8952-b67f06d8b3ce">
+					<argvaluetype>
+						System.String
+					</argvaluetype>
+					<argvalue>
+						5 d&#237;as despues de la fecha en curso
+					</argvalue>
+				</argument>
+			</arguments>
+		</userrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"

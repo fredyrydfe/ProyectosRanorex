@@ -132,17 +132,20 @@
       <RepositoryCode>true</RepositoryCode>
       <id>d2ec1168-80d7-44cb-8e62-c4af0c37c271</id>
     </Compile>
-    <Compile Include="Mapa de objetos\Busqueda de vuelos\ConsultarVuelosIdaYRegreso.cs">
+    <Compile Include="Definicion de pasos\Busqueda de vuelos\ConsultarVuelosIdaYRegreso.cs">
       <BoundTo>e4394b6b-4ddd-4d70-ba2a-371589666328</BoundTo>
       <DependentUpon>ConsultarVuelosIdaYRegreso.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>72f3c672-3348-422c-b5db-31d303732232</id>
     </Compile>
-    <Compile Include="Mapa de objetos\Busqueda de vuelos\ConsultarVuelosIdaYRegreso.UserCode.cs">
+    <Compile Include="Definicion de pasos\Busqueda de vuelos\ConsultarVuelosIdaYRegreso.UserCode.cs">
       <BoundTo>e4394b6b-4ddd-4d70-ba2a-371589666328</BoundTo>
       <DependentUpon>ConsultarVuelosIdaYRegreso.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>1807a82b-3468-4267-8bcd-7741f471ca2e</id>
+    </Compile>
+    <Compile Include="Mapa de objetos\Home.cs">
+      <id>e40ee921-6d8d-471d-8d8a-2413340c62f9</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>c2922e83-77aa-4cd5-885e-21fd4cca4338</id>
@@ -175,7 +178,7 @@
       <repoid>6b107243-6a37-48c8-b362-66e2e9c84ada</repoid>
       <reporootid>c84fb135-f1e1-4ec8-af2e-18e63ef4015f</reporootid>
     </None>
-    <None Include="Mapa de objetos\Busqueda de vuelos\ConsultarVuelosIdaYRegreso.rxrec">
+    <None Include="Definicion de pasos\Busqueda de vuelos\ConsultarVuelosIdaYRegreso.rxrec">
       <BoundTo>73e748db-940b-44b5-a251-61d617e17020</BoundTo>
       <id>e4394b6b-4ddd-4d70-ba2a-371589666328</id>
       <recordtableid>8b3da90c-a62d-478e-a47c-8a4941872256</recordtableid>
@@ -197,11 +200,14 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Definicion de pasos\Busqueda de vuelos">
+      <id>d38f5846-cd13-462b-951b-9aa5bf2f11cc</id>
+    </Folder>
     <Folder Include="Mapa de objetos">
       <id>52b5f224-2766-4ef1-9ca6-ed6b697bdd4a</id>
     </Folder>
-    <Folder Include="Mapa de objetos\Busqueda de vuelos">
-      <id>aecf52a2-71c2-4dfd-acac-7aef4c84f7dd</id>
+    <Folder Include="Definicion de pasos">
+      <id>955fe689-e946-459a-91ed-2959783bb813</id>
     </Folder>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
