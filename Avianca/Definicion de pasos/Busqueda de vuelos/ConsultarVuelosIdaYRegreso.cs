@@ -130,7 +130,7 @@ namespace Avianca.Definicion_de_pasos.Busqueda_de_vuelos
             repo.EnColombiaVuelosNacionalesEInternac.BkFechaRegreso.Click();
             Delay.Milliseconds(200);
             
-            Mapa_de_objetos.Home.SeleccionarFechaDeRegreso("5 días despues de la fecha en curso");
+            Mapa_de_objetos.Home.seleccionarFechaDeRegreso("5 días despues de la fecha en curso");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EnColombiaVuelosNacionalesEInternac.Consultar' at Center.", repo.EnColombiaVuelosNacionalesEInternac.ConsultarInfo, new RecordItemIndex(14));

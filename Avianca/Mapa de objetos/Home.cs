@@ -37,7 +37,7 @@ namespace Avianca.Mapa_de_objetos
     	}
     	
     	[UserCodeMethod]
-    	public static void SeleccionarFechaDeRegreso(String valor)
+    	public static void seleccionarFechaDeRegreso(String valor)
     	{
     		
     		if (valor.Contains("días despues de la fecha en curso")) {

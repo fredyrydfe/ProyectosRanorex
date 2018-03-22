@@ -3982,7 +3982,7 @@ KACiiigAooooAKKKKAP/2Q==
 		classname="Home"
 		enabled="True"
 		isexternaltestmethod="True"
-		methodname="SeleccionarFechaDeRegreso"
+		methodname="seleccionarFechaDeRegreso"
 		namespace="Avianca.Mapa_de_objetos"
 		optional="False"
 		varname="">
