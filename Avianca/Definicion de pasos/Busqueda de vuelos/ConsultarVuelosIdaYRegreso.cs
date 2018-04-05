@@ -130,7 +130,7 @@ namespace Avianca.Definicion_de_pasos.Busqueda_de_vuelos
             repo.EnColombiaVuelosNacionalesEInternac.BkFechaRegreso.Click();
             Delay.Milliseconds(200);
             
-            Mapa_de_objetos.Home.seleccionarFechaDeRegreso("5 días despues de la fecha en curso");
+            Mapa_de_objetos.Home.seleccionarFechaDeRegreso("3 días despues de la fecha en curso");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'EnColombiaVuelosNacionalesEInternac.Consultar' at Center.", repo.EnColombiaVuelosNacionalesEInternac.ConsultarInfo, new RecordItemIndex(14));
@@ -140,16 +140,16 @@ namespace Avianca.Definicion_de_pasos.Busqueda_de_vuelos
             Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.BeginLocationContainer'", repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.BeginLocationContainerInfo, new ActionTimeout(30000), new RecordItemIndex(15));
             repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.BeginLocationContainerInfo.WaitForExists(30000);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\n\n\n\n\n\n\n') on item 'TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainer'.", repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainerInfo, new RecordItemIndex(16));
-            Validate.AttributeEqual(repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainerInfo, "InnerText", "\n\n\n\n\n\n\n\n");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\r\n\r\n\r\n\r\n\r\n\r\n\n') on item 'TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainer'.", repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainerInfo, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainerInfo, "InnerText", "\n\r\n\r\n\r\n\r\n\r\n\r\n\n");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\n\n\n\n\n\n\n') on item 'TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.BeginLocationContainer1'.", repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.BeginLocationContainer1Info, new RecordItemIndex(17));
-            Validate.AttributeEqual(repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.BeginLocationContainer1Info, "InnerText", "\n\n\n\n\n\n\n\n");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\r\n\r\n\r\n\r\n\r\n\r\n\n') on item 'TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.BeginLocationContainer1'.", repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.BeginLocationContainer1Info, new RecordItemIndex(17));
+            Validate.AttributeEqual(repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.BeginLocationContainer1Info, "InnerText", "\n\r\n\r\n\r\n\r\n\r\n\r\n\n");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\n\n\n\n\n\n\n') on item 'TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainer1'.", repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainer1Info, new RecordItemIndex(18));
-            Validate.AttributeEqual(repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainer1Info, "InnerText", "\n\n\n\n\n\n\n\n");
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='\n\r\n\r\n\r\n\r\n\r\n\r\n\n') on item 'TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainer1'.", repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainer1Info, new RecordItemIndex(18));
+            Validate.AttributeEqual(repo.TiquetesAereosEnVuelosNacionalesEI.RowCalendarmatrixModifydatesPanelCal.EndLocationContainer1Info, "InnerText", "\n\r\n\r\n\r\n\r\n\r\n\r\n\n");
             Delay.Milliseconds(100);
             
         }
